@@ -271,6 +271,8 @@
   .foot-links{display:flex;flex-wrap:wrap;gap:20px;}
   .foot-links a{font-family:var(--mono);font-size:12px;letter-spacing:.05em;color:rgba(251,244,239,.72);transition:color .2s;}
   .foot-links a:hover{color:#EDAFBE;}
+  .foot-logo{max-height:66px;width:auto;opacity:.95;}
+  .foot-logo.missing{display:none;}
   .foot-copy{font-family:var(--mono);font-size:11px;color:rgba(251,244,239,.45);width:100%;margin-top:12px;padding-top:24px;border-top:1px solid rgba(255,255,255,.1);}
 
   .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease;}
@@ -617,6 +619,7 @@
       <a href="#writing">Writing</a>
       <a href="mailto:induprazad@gmail.com">Email</a>
     </div>
+    <img class="foot-logo" src="images/logo.png" alt="Indu Prasad logo" onerror="this.classList.add('missing')" />
     <div class="foot-copy">© 2025 Indu Prasad — All rights reserved.</div>
   </div>
 </footer>
